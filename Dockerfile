@@ -18,4 +18,4 @@ RUN cd /usr/src/app
 #CMD [ "pm2", "start", "all" ]
 #CMD [ "pm2", "restart", "all" ]
 #CMD [ "pm2", "stop", "all" ]
-ENTRYPOINT [ "sh", "pm2Start.sh" ]
+ENTRYPOINT [ "/bin/sh", "pm2Start.sh" ]
