@@ -14,8 +14,7 @@ RUN cd /usr/src/app
 # Bundle app source
 #COPY . .
 
-#CMD [ "npm", "start" ]
-#CMD [ "pm2", "start", "all" ]
-#CMD [ "pm2", "restart", "all" ]
-#CMD [ "pm2", "stop", "all" ]
+ADD pm2Start.sh /usr/src/app/pm2Start.sh
+RUN chmod +x /usr/src/app/pm2Start.sh
+CMD [ "/usr/src/app/pm2Start.sh" ]
 #ENTRYPOINT [ "/bin/sh", "pm2Start.sh" ]
