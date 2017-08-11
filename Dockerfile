@@ -16,5 +16,5 @@ RUN cd /usr/src/app
 
 #ADD pm2Start.sh /usr/src/app/pm2Start.sh
 #RUN chmod +x /usr/src/app/pm2Start.sh
-CMD [ "/usr/src/app/pm2Start.sh" ]
+#CMD [ "/usr/src/app/pm2Start.sh" ]
 #ENTRYPOINT [ "/bin/sh", "pm2Start.sh" ]
