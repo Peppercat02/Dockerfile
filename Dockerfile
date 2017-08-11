@@ -19,4 +19,4 @@ CMD [ "pm2", "start", "all" ]
 CMD [ "pm2", "restart", "all" ]
 CMD [ "pm2", "stop", "all" ]
 #CMD sh pm2Start.sh
-ENTRYPOINT sh pm2Start.sh
+#ENTRYPOINT sh pm2Start.sh
