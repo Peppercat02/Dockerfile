@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 # For npm@5 or later, copy package-lock.json as well
 # COPY package.json package-lock.json .
 
-RUN npm install supervisor express express-generator pm2 forever co kue clone -g
+RUN npm install supervisor express express-generator pm2 forever co kue clone mqtt absorb merge -g
 RUN cd /usr/src/app
 
 # Bundle app source
